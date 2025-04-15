@@ -1,12 +1,19 @@
 let soma = 0;
-    for (let i = 1; i <= 10; i++) {
-        let numero = parseInt(prompt(`Digite o ${i}º número:`));
-        if (isNaN(numero)) {
-            alert("Número inválido! Tente novamente.");
-            i--; 
-        } else {
-            soma += numero;
-        }
-    } {
-    alert("A soma dos 10 números é: " + soma);
+let nota = 0;
+
+for (let i = 1; i <= 5; i++) {
+
+    nota = parseFloat(prompt(`Digite a ${i}ª nota:`));
+    
+    if (isNaN(nota)) {
+        alert("Numero invalido!");
+
+        i--;
+    } else {
+        soma += nota;
+    }
 }
+
+let media = soma / 5;
+alert("A média das notas é: " + media.toFixed(2));
+
