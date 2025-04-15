@@ -1,12 +1,12 @@
-let numero = parseInt(prompt("Digite um número:"));
-    if (isNaN(numero) || numero < 1) {
-        alert("Digite um número válido (maior ou igual a 1).");
-    
-    }
-
-    let resultado = "";
-    for (let i = 1; i <= numero; i++) {
-        resultado += i + " ";
+let soma = 0;
+    for (let i = 1; i <= 10; i++) {
+        let numero = parseInt(prompt(`Digite o ${i}º número:`));
+        if (isNaN(numero)) {
+            alert("Número inválido! Tente novamente.");
+            i--; // repete o índice
+        } else {
+            soma += numero;
+        }
     } {
-    alert("Números de 1 até " + numero + " : " + resultado);
+    alert("A soma dos 10 números é: " + soma);
 }
