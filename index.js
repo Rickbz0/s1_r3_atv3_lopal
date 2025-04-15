@@ -1,12 +1,11 @@
-let soma = 0;
+let numero = parseInt(prompt("Digite um número para ver sua tabuada:"));
+    if (isNaN(numero)) {
+        alert("Número inválido.");
+    }
+
+    let resultado = "";
     for (let i = 1; i <= 10; i++) {
-        let numero = parseInt(prompt(`Digite o ${i}º número:`));
-        if (isNaN(numero)) {
-            alert("Número inválido! Tente novamente.");
-            i--; // repete o índice
-        } else {
-            soma += numero;
-        }
+        resultado += `${numero} x ${i} = ${numero * i}\n`;
     } {
-    alert("A soma dos 10 números é: " + soma);
+    alert("Tabuada de " + numero + " : " + resultado);
 }
