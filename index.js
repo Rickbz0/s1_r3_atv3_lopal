@@ -3,7 +3,7 @@ let soma = 0;
         let numero = parseInt(prompt(`Digite o ${i}º número:`));
         if (isNaN(numero)) {
             alert("Número inválido! Tente novamente.");
-            i--; // repete o índice
+            i--; 
         } else {
             soma += numero;
         }
